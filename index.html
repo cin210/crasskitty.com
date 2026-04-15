@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrassKitty - Links</title>
+  <meta name="description" content="CrassKitty's link page. Find all links here.">
+  <meta property="og:title" content="CrassKitty - Links">
+  <meta property="og:description" content="I sew cute outfits just to take content in them.">
+  <meta property="og:image" content="https://crasskitty.com/profile.jpg">
+  <meta property="og:url" content="https://crasskitty.com">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #FF00B2;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      padding: 32px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Profile section */
+    .profile-pic {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .username {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .bio {
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 24px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* Link buttons */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .link-button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 56px;
+      border: 2px solid #ffffff;
+      border-radius: 8px;
+      background: transparent;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.15s ease, transform 0.1s ease;
+      position: relative;
+      min-height: 56px;
+      text-align: center;
+    }
+
+    .link-button:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .link-button:active {
+      transform: scale(0.98);
+    }
+
+    /* Social icons */
+    .socials {
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: opacity 0.15s ease;
+    }
+
+    .social-icon:hover {
+      opacity: 0.7;
+    }
+
+    .social-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+
+    /* Send Sol section */
+    .sol-section {
+      width: 100%;
+      border: 2px solid #ffffff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .sol-section .sol-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .sol-section .sol-address {
+      font-size: 13px;
+      opacity: 0.8;
+      word-break: break-all;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 16px 48px;
+      }
+
+      .link-button {
+        padding: 14px 40px;
+        font-size: 15px;
+        min-height: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile -->
+    <div class="profile-pic">
+      <img src="profile.jpg" alt="CrassKitty" loading="eager">
+    </div>
+    <div class="username">@crasskitty</div>
+    <div class="bio">I sew cute outfits just to take content in them.</div>
+
+    <!-- Links -->
+    <div class="links">
+      <a href="https://tiktok.com/@crasskitty" class="link-button" target="_blank" rel="noopener">
+        Check out my TikTok
+      </a>
+
+      <a href="https://x.com/crasskitty" class="link-button" target="_blank" rel="noopener">
+        CrassKitty on X
+      </a>
+
+      <a href="https://onlyfans.com/crasskitty" class="link-button" target="_blank" rel="noopener">
+        See exclusive content
+      </a>
+
+      <div class="sol-section">
+        <div class="sol-title">Send Sol</div>
+        <div class="sol-address">Crasskitty.sol</div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="socials">
+      <a href="https://tiktok.com/@crasskitty" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.28 8.28 0 0 0 4.76 1.5V6.8a4.83 4.83 0 0 1-1-.11z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
